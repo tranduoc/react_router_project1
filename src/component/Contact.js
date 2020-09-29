@@ -4,8 +4,14 @@ class Contact extends Component {
   render() {
     return (
       <section className="container">
+        <div className="row h-100 ">
+          <div className="col my-auto ">
+            <div className="header-content mx-auto  news-item-title ">
+              <h1 className="mb-5 text-center pb-3">Contact Us</h1>
+            </div>
+          </div>
+        </div>
         <div className="text-center mt-4">
-          <h2 className="section-heading text-uppercase">Contact Us</h2>
           <h3 className="section-subheading text-muted">
             Lorem ipsum dolor sit amet consectetur.
           </h3>

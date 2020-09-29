@@ -4,6 +4,13 @@ class NewsDetail extends Component {
   render() {
     return (
       <section className="container mt-4">
+        <div className="row h-100 ">
+          <div className="col my-auto ">
+            <div className="header-content mx-auto  news-item-title ">
+              <h1 className="mb-5 text-center pb-3">News Detail</h1>
+            </div>
+          </div>
+        </div>
         <div className="card-body">
           <img src="./images/team2.jpg" alt="" className="img-fluid" />
           <p className="lead">Lorem, ipsum dolor.</p>
