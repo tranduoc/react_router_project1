@@ -9,7 +9,7 @@ class DieuHuongURL extends Component {
   render() {
     return (
       <div>
-        <Route exact path="/">
+        <Route exact path="/home">
           <Home />
         </Route>
 

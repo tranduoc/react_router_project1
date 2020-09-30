@@ -1,0 +1,88 @@
+[
+  {
+    "id": 0,
+    "title": "Exciting discovery raises potential for life",
+    "quotes": "Last ever A380 superjumbo is almost done",
+    "content": "Many CEOs want new leadership in the White House even though Trump is promising four more years of low taxes and light regulations -- policies that C-Suites often crave.Create React App doesn’t handle backend logic or databases; it just creates a frontend build pipeline, so you can use it with any backend you want. Under the hood, it uses Babel and webpack, but you don’t need to know anything about them",
+
+    "image": "./images/team1.jpg",
+    "author": "Jame"
+  },
+
+  {
+    "id": 1,
+    "title": "It'll work something like this",
+    "quotes": "Change any of your other",
+    "content": " Many CEOs want new leadership in the White House even though Trump is promising four more years of low taxes and light regulations policies that C-Suites often crave. If you prefer to set up your own JavaScript toolchain from scratch, check out this guide that re-creates some of the Create React App functionality. ",
+
+    "image": "./images/team2.jpg",
+    "author": "Shara Cristhy"
+  },
+
+  {
+    "id": 2,
+    "title": "If the new stuff isn't compelling",
+    "quotes": "Most of the changes have a one-to-one mapping between",
+    "content": "Many CEOs want new leadership in the White House even though Trump is promising four more years of low taxes and light regulations -- policies that C-Suites often crave.Create React App doesn’t handle backend logic or databases; it just creates a frontend build pipeline, so you can use it with any backend you want. Under the hood, it uses Babel and webpack, but you don’t need to know anything about them",
+
+    "image": "./images/team3.jpg",
+    "author": "Kevin Jan"
+  },
+
+  {
+    "id": 3,
+    "title": "What it means for you and your team",
+    "quotes": "especially with a lot of nested Route",
+    "content": "Many CEOs want new leadership in the White House even though Trump is promising four more years of low taxes and light regulations -- policies that C-Suites often crave. If you prefer to set up your own JavaScript toolchain from scratch, check out this guide that re-creates some of the Create React App functionality.",
+
+    "image": "./images/team4.jpg",
+    "author": "Henry"
+  },
+
+  {
+    "id": 4,
+    "title": "We've learned from starting fresh",
+    "quotes": "we've created a smaller, smarter, and simpler",
+    "content": "Many CEOs want new leadership in the White House even though Trump is promising four more years of low taxes and light regulations -- policies that C-Suites often crave.Create React App doesn’t handle backend logic or databases; it just creates a frontend build pipeline, so you can use it with any backend you want. Under the hood, it uses Babel and webpack, but you don’t need to know anything about them",
+
+    "image": "./images/team5.jpg",
+    "author": "Jackie Donnie"
+  },
+
+  {
+    "id": 5,
+    "title": "In this example we have life on Mars",
+    "quotes": "so people using the keyboard for navigation",
+    "content": "Many CEOs want new leadership in the White House even though Trump is promising four more years of low taxes and light regulations -- policies that C-Suites often crave. If you prefer to set up your own JavaScript toolchain from scratch, check out this guide that re-creates some of the Create React App functionality.",
+
+    "image": "./images/team6.jpg",
+    "author": "Liwandosky"
+  },
+  {
+    "id": 6,
+    "title": "Our goal is to deliver comprehensive",
+    "quotes": "embrace any diverse group who wishes to learn",
+    "content": "Many CEOs want new leadership in the White House even though Trump is promising four more years of low taxes and light regulations -- policies that C-Suites often crave.Create React App doesn’t handle backend logic or databases; it just creates a frontend build pipeline, so you can use it with any backend you want. Under the hood, it uses Babel and webpack, but you don’t need to know anything about them",
+
+    "image": "./images/team7.jpg",
+    "author": "Lionel Messy"
+  },
+  {
+    "id": 7,
+    "title": "In a professional React app a components",
+    "quotes": "accessible and reusable abstractions",
+    "content": "Many CEOs want new leadership in the White House even though Trump is promising four more years of low taxes and light regulations -- policies that C-Suites often crave. If you prefer to set up your own JavaScript toolchain from scratch, check out this guide that re-creates some of the Create React App functionality.",
+
+    "image": "./images/team8.jpg",
+    "author": "Bao Banh bao"
+  },
+  {
+    "id": 8,
+    "title": "Access to location and navigate",
+    "quotes": "We also offer training on JavaScript and Node",
+    "content": "Many CEOs want new leadership in the White House even though Trump is promising four more years of low taxes and light regulations -- policies that C-Suites often crave.Create React App doesn’t handle backend logic or databases; it just creates a frontend build pipeline, so you can use it with any backend you want. Under the hood, it uses Babel and webpack, but you don’t need to know anything about them",
+
+    "image": "./images/team9.jpg",
+    "author": "An Binh"
+  }
+]
