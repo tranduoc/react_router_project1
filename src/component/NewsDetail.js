@@ -1,30 +1,33 @@
 import React, { Component } from "react";
 
+import data from "./data.json";
 class NewsDetail extends Component {
   render() {
     return (
       <section className="container mt-4">
-        <div className="row h-100 ">
-          <div className="col my-auto ">
-            <div className="header-content mx-auto  news-item-title ">
-              <h1 className="mb-5 text-center pb-3">News Detail</h1>
-            </div>
-          </div>
-        </div>
-        <div className="card-body">
-          <img src="./images/team2.jpg" alt="" className="img-fluid" />
-          <p className="lead">Lorem, ipsum dolor.</p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi illo
-            omnis officiis quaerat alias
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            dolorem quod magni iusto voluptatum alias quos. Cupiditate, possimus
-            similique soluta provident impedit recusandae velit et voluptatum
-            quas voluptatibus veritatis consectetur.
-          </p>
-        </div>
+        {data.map((value, key) => {
+          if (value.id === parseInt(this.props.match.params.id)) {
+            return (
+              <div>
+                <div className="row h-100 " key={key}>
+                  <div className="col my-auto ">
+                    <div className="header-content mx-auto  news-item-title ">
+                      <h1 className="mb-5 text-center pb-3">{value.title}</h1>
+                    </div>
+                  </div>
+                </div>
+                <div className="card-body">
+                  <img src={value.image} alt="" className="img-fluid "></img>
+
+                  <p>{value.content}</p>
+
+                  <p className="lead">{value.author}</p>
+                </div>
+              </div>
+            );
+          }
+        })}
+
         <div className="container">
           <div className="card-body text-center">
             <h4 className="card-title">News Relate</h4>
@@ -34,7 +37,6 @@ class NewsDetail extends Component {
               <div className="card-deck">
                 <div className="card">
                   <a href="newsDetail.html">
-                    {" "}
                     <img
                       className="card-img-top"
                       src="./images/team3.jpg"
@@ -48,7 +50,6 @@ class NewsDetail extends Component {
                 </div>
                 <div className="card">
                   <a href="newsDetail.html">
-                    {" "}
                     <img
                       className="card-img-top"
                       src="./images/team4.jpg"
@@ -62,7 +63,6 @@ class NewsDetail extends Component {
                 </div>
                 <div className="card">
                   <a href="newsDetail.html">
-                    {" "}
                     <img
                       className="card-img-top"
                       src="./images/team3.jpg"
@@ -76,10 +76,9 @@ class NewsDetail extends Component {
                 </div>
                 <div className="card">
                   <a href="newsDetail.html">
-                    {" "}
                     <img
                       className="card-img-top"
-                      src="./images/team4.jpg"
+                      src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg"
                       alt=""
                     />
                   </a>
@@ -91,7 +90,6 @@ class NewsDetail extends Component {
               </div>
             </div>
           </div>
-          {/*  */}
         </div>
       </section>
     );
