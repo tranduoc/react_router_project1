@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 
 import data from "./data.json";
+import NewsRelate from "./NewsRelate";
 class NewsDetail extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <section className="container mt-4">
@@ -12,13 +17,18 @@ class NewsDetail extends Component {
                 <div className="row h-100 " key={key}>
                   <div className="col my-auto ">
                     <div className="header-content mx-auto  news-item-title ">
-                      <h1 className="mb-5 text-center pb-3">{value.title}</h1>
+                      <h3 className="mb-2  pb-3">{value.title}</h3>
                     </div>
                   </div>
                 </div>
-                <div className="card-body">
-                  <img src={value.image} alt="" className="img-fluid "></img>
-
+                <div className="card-body  text-center mb-2 ">
+                  <img
+                    src={value.image}
+                    alt=""
+                    className="img-fluid news_image_item "
+                  ></img>
+                </div>
+                <div className="card-body  ">
                   <p>{value.content}</p>
 
                   <p className="lead">{value.author}</p>
@@ -35,58 +45,23 @@ class NewsDetail extends Component {
           <div className="row">
             <div className="col-12">
               <div className="card-deck">
-                <div className="card">
-                  <a href="newsDetail.html">
-                    <img
-                      className="card-img-top"
-                      src="./images/team3.jpg"
-                      alt=""
-                    />
-                  </a>
-                  <div className="card-body">
-                    <h4 className="card-title">Title</h4>
-                    <p className="card-text">Text</p>
-                  </div>
-                </div>
-                <div className="card">
-                  <a href="newsDetail.html">
-                    <img
-                      className="card-img-top"
-                      src="./images/team4.jpg"
-                      alt=""
-                    />
-                  </a>
-                  <div className="card-body">
-                    <h4 className="card-title">Title</h4>
-                    <p className="card-text">Text</p>
-                  </div>
-                </div>
-                <div className="card">
-                  <a href="newsDetail.html">
-                    <img
-                      className="card-img-top"
-                      src="./images/team3.jpg"
-                      alt=""
-                    />
-                  </a>
-                  <div className="card-body">
-                    <h4 className="card-title">Title</h4>
-                    <p className="card-text">Text</p>
-                  </div>
-                </div>
-                <div className="card">
-                  <a href="newsDetail.html">
-                    <img
-                      className="card-img-top"
-                      src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg"
-                      alt=""
-                    />
-                  </a>
-                  <div className="card-body">
-                    <h4 className="card-title">Title</h4>
-                    <p className="card-text">Text</p>
-                  </div>
-                </div>
+                {data.map((value, key) => {
+                  if (
+                    key <= 4 &&
+                    value.id !== parseInt(this.props.match.params.id)
+                  ) {
+                    return (
+                      <NewsRelate
+                        key={key}
+                        newsitemId={value.id}
+                        image={value.image}
+                        title={value.title}
+                        quotes={value.quotes}
+                        author={value.author}
+                      ></NewsRelate>
+                    );
+                  }
+                })}
               </div>
             </div>
           </div>

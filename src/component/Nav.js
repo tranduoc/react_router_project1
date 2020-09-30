@@ -41,9 +41,9 @@ class Nav extends Component {
                   News
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-item disabled  ">
                 <NavLink
-                  className="nav-link js-scroll-trigger"
+                  className="nav-link js-scroll-trigger disabled"
                   to="/news-detail"
                 >
                   News Detail
