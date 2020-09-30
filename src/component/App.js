@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import DieuHuongURL from "../routers/DieuHuongURL";
 
 import "./../css/App.css";
@@ -14,12 +15,14 @@ import Nav from "./Nav";
 
 function App() {
   return (
-    <div>
-      <Nav />
-      <DieuHuongURL />
+    <Router>
+      <div>
+        <Nav />
+        <DieuHuongURL />
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

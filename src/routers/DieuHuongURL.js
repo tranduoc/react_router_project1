@@ -8,24 +8,22 @@ import Contact from "./../component/Contact.js";
 class DieuHuongURL extends Component {
   render() {
     return (
-      <Router>
-        <div>
-          <Route exact path="/">
-            <Home />
-          </Route>
+      <div>
+        <Route exact path="/">
+          <Home />
+        </Route>
 
-          <Route exact path="/news">
-            <News />
-          </Route>
-          <Route exact path="/news-detail">
-            <NewsDetail />
-          </Route>
+        <Route exact path="/news">
+          <News />
+        </Route>
+        <Route exact path="/news-detail">
+          <NewsDetail />
+        </Route>
 
-          <Route exact path="/contact">
-            <Contact />
-          </Route>
-        </div>
-      </Router>
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
+      </div>
     );
   }
 }
