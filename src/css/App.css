@@ -68,9 +68,13 @@
 .news-item-title {
   margin-top: 5rem;
 }
-.img-fluid.detail_image {
-  width: 100%;
+.img-fluid.news_image_item {
+  width: 60%;
+  height: 40%;
+ 
+ 
 }
+
 :root {
   --blue: #2092ed;
   --indigo: #6610f2;
