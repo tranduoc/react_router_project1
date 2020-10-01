@@ -1,7 +1,47 @@
 import React, { Component } from "react";
+import { Redirect } from "react-router-dom";
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isRedirect: false,
+      rName: "",
+      rEmail: "",
+      rPhone: "",
+      rMessenger: "",
+    };
+  }
+  formSubmit = (event) => {
+    event.preventDefault();
+
+    this.setState({
+      isRedirect: true,
+    });
+  };
+
+  isChange = (event) => {
+    const nameUser = event.target.name;
+    const valueUser = event.target.value;
+    this.setState({
+      [nameUser]: valueUser,
+    });
+  };
+
+  getValue = () => {
+    let content = "";
+    content += "name info " + this.state.rName;
+    content += "email info " + this.state.rEmail;
+    content += "phone info " + this.state.rPhone;
+    content += "messenger info " + this.state.rMessenger;
+    return content;
+  };
+
   render() {
+    if (this.state.isRedirect) {
+      console.log(this.state.rName);
+      return <Redirect to="/" />;
+    }
     return (
       <section className="container">
         <div className="row h-100 ">
@@ -16,11 +56,15 @@ class Contact extends Component {
             Lorem ipsum dolor sit amet consectetur.
           </h3>
         </div>
-        <form id="contactForm" name="sentMessage" noValidate="novalidate">
+        <form id="contactForm" noValidate="novalidate">
           <div className="row align-items-stretch mb-5">
             <div className="col-md-6">
               <div className="form-group">
                 <input
+                  name="rName"
+                  onChange={(event) => {
+                    this.isChange(event);
+                  }}
                   className="form-control"
                   id="name"
                   type="text"
@@ -33,6 +77,10 @@ class Contact extends Component {
               </div>
               <div className="form-group">
                 <input
+                  name="rEmail"
+                  onChange={(event) => {
+                    this.isChange(event);
+                  }}
                   className="form-control"
                   id="email"
                   type="email"
@@ -45,6 +93,10 @@ class Contact extends Component {
               </div>
               <div className="form-group mb-md-0">
                 <input
+                  name="rPhone"
+                  onChange={(event) => {
+                    this.isChange(event);
+                  }}
                   className="form-control"
                   id="phone"
                   type="tel"
@@ -58,6 +110,10 @@ class Contact extends Component {
             <div className="col-md-6">
               <div className="form-group form-group-textarea mb-md-0">
                 <textarea
+                  name="rMessenger"
+                  onChange={(event) => {
+                    this.isChange(event);
+                  }}
                   className="form-control"
                   id="message"
                   placeholder="Your Message *"
@@ -75,6 +131,7 @@ class Contact extends Component {
               className="btn btn-primary btn-xl text-uppercase"
               id="sendMessageButton"
               type="submit"
+              onClick={(event) => this.formSubmit(event)}
             >
               Send Message
             </button>

@@ -23,7 +23,7 @@ class NewsDetail extends Component {
                 </div>
                 <div className="card-body  text-center mb-2 ">
                   <img
-                    src={value.image}
+                    src={"." + value.image}
                     alt=""
                     className="img-fluid news_image_item "
                   ></img>
@@ -47,7 +47,7 @@ class NewsDetail extends Component {
               <div className="card-deck">
                 {data.map((value, key) => {
                   if (
-                    key <= 4 &&
+                    key <= 3 &&
                     value.id !== parseInt(this.props.match.params.id)
                   ) {
                     return (
