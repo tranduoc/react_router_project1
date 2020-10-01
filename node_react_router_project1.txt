@@ -1,0 +1,18 @@
+Nội dung project tập trung giải quyết 4 vấn đề
+1. Thể hiện sự tương tác giữa các component thông qua thư viện react-router-dom - cụ thể : Thể hiện rõ nét thông qua file :DieuHuongURL.js
+2. Thực hiện được quá trình truyền dữ liệu thông qua URL có sử dụng hàm slug : convertURL NewsItem.js kết hợp với <Route path="", component ={NewsDetail.js} truyền thông tin qua URL
+3. Thực hiện được quá trình truyền dữ liệu từ json vào các component
+4. Thực hiện quá trình xử lý và truyền dữ liệu form - sử dụng props và state 
+Tổng hợp luồng dữ liệu trong component
+1: <App> 
+<Nav>, <DieuHuongURL>, <Footer>
+2: <Nav> 
+<Home>,<News><Contact>
+3: <News>
+<NewsItem>
+4:<NewsItem>
+<NewsDetail>, <NewsRelate>
+5:<NewsRelate>
+<NewsDetail>
+6:<Contact>
+<Home>
