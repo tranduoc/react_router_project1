@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter as NavLink } from "react-router-dom";
+
 class NewsItem extends Component {
-  constructor(props) {
-    super(props);
-  }
   convertURL = (str) => {
     // Chuyển hết sang chữ thường
     str = str.toLowerCase();
