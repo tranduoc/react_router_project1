@@ -16,3 +16,5 @@ Tổng hợp luồng dữ liệu trong component
 <NewsDetail>
 6:<Contact>
 <Home>
+how to:
+- show image link address in datajson:  chỉ thực hiện thao tác đối với link đường dẫn cố định, cách để hiển thị ảnh sử dụng link đường dẫn internet

@@ -41,7 +41,7 @@ class NewsRelate extends Component {
             ".html"
           }
         >
-          <img className="card-img-top" src={"." + this.props.image} alt="" />
+          <img className="card-img-top" src={this.props.image} alt="" />
         </a>
         <div className="card-body">
           <h4 className="card-title">{this.props.title}</h4>
